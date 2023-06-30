@@ -1,0 +1,36 @@
+// ----------------------------------------------------------------------------
+//   @params data:List<String>  -->
+//                          loadCryptoGeneralInfo() <--
+//                      <--
+// @return { RAW: { PRICE: Real , CHANGEPCT24HOUR: Real } }
+//
+// Use CryptoCompare  $ Price Multiple Symbols Full Data
+// ----------------------------------------------------------------------------
+
+module.exports = async function (data, cb) {
+    try {
+        let cryptoSymbols = loadParametersInURL(data);
+        let response = await fetch(`https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${cryptoSymbols}&tsyms=USD`);
+        if (response.ok) {
+            let dataOut = await response.json();  
+            cb(dataOut , null);
+        }
+    }
+    catch (e) { 
+        cb(null , e)
+    }
+}
+
+//-----------------------------------------------------------------------
+
+//---------------------------------------------------------------
+//@params data:List<String>
+//@return string   Example: "BTC,ETH,XRP,SAND"
+//---------------------------------------------------------------
+function loadParametersInURL(data) {
+    let stringURLOut = "";
+    data.forEach((crypto) => {
+        stringURLOut += crypto + ","
+    });
+    return stringURLOut;
+}

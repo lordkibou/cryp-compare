@@ -1,0 +1,21 @@
+{
+  "name": "clientfunctions",
+  "version": "1.0.0",
+  "description": "Functions for calling API from client",
+  "main": "loadCryptoMarketsPrices.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "cryp-compare"
+  },
+  "author": "Juan Diaz",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
