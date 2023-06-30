@@ -10,7 +10,7 @@
 module.exports = async function (data, cb) {
     try {
         let cryptoSymbol = data.cryptoSymbol;
-        let response = await fetch(`https://min-api.cryptocompare.com/data/top/exchanges/full?fsyms=${cryptoSymbol}&tsym=USD&limit=15`);
+        let response = await fetch(`https://min-api.cryptocompare.com/data/top/exchanges/full?fsyms=${cryptoSymbol}&tsym=USD&limit=15&api_key={c4ebc752ad6c6f0a5ec7c8ad330b32e5a5f14a92c49458aae12522d773ddc7fc}`);
         if (response.ok) {
             let dataOut = await response.json();  
             cb(dataOut , null);
