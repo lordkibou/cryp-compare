@@ -1,3 +1,5 @@
+import { BrowserRouter , Navigatie, Routes, Route }
+  from 'react-router-dom';
 import { loadCryptoMarketsPrices, loadCryptoInfo } from "./clientFunctions/loadCryptoMarketsPrices";
 
 document.addEventListener('DOMContentLoaded', async function () {
@@ -22,7 +24,12 @@ document.addEventListener('DOMContentLoaded', async function () {
 function App() {
   return (
     <div className="App">
-      <p>Hola mundo</p>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element="{<homePage/>}" />
+          <Route path='/' element="{<marketsComparator/>}"/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
