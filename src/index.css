@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/*Apply font*/
+html, body, #root, .App {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+
+.wrapper {
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+/*Style for the main logo*/
+.logo {
+    width: 12.5rem;
+    height: 2.5rem;
+    margin-left: 0.3rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 4.7rem;
+    width: 100%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.callToAction {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+
+/*Responsive Styles For PC*/
+@media (min-width: 1000px) {
+    .logo {
+        width: 15rem;
+        height: 3rem;
+    }
+}

@@ -1,6 +1,9 @@
 import { BrowserRouter , Navigatie, Routes, Route }
   from 'react-router-dom';
 import { loadCryptoMarketsPrices, loadCryptoInfo } from "./clientFunctions/loadCryptoMarketsPrices";
+import HomePage from './scenes/homePage';
+import MarketsComparator from './scenes/marketsComparator';
+import './index.css';
 
 document.addEventListener('DOMContentLoaded', async function () {
   // First page: 0, with 50 cryptos
@@ -26,8 +29,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element="{<homePage/>}" />
-          <Route path='/' element="{<marketsComparator/>}"/>
+          <Route path='/home' element={<HomePage/>} />
+          <Route path='/' element={<MarketsComparator/>}/>
         </Routes>
       </BrowserRouter>
     </div>

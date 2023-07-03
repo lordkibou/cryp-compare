@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
     return (
-        <header>
+        <header className="header">
             <div>
-                <Link to="/">
-                    <img src="/ruta-del-logo.png" alt="Logo-CrypCompare" />
+                <Link to="#">
+                    <img src="logo.png" alt="Logo-CrypCompar" className="logo"/>
                 </Link>
             </div>
         </header>
       );
 }
-
 
 export default Navbar;
