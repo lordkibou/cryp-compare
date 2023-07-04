@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Navbar Scene 1`] = `
+<header
+  className="header"
+>
+  <div>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="Logo-CrypCompar"
+        className="logo"
+        src="logo.png"
+      />
+    </a>
+  </div>
+</header>
+`;

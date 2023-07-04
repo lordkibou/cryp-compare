@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing MarketsComparator Scene 1`] = `
+<div
+  className="markets-comparator"
+>
+  <header
+    className="header"
+  >
+    <div>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="Logo-CrypCompar"
+          className="logo"
+          src="logo.png"
+        />
+      </a>
+    </div>
+  </header>
+  <div
+    className="wrapper"
+  >
+    <div
+      className="callToAction"
+    >
+      BTC Markets Comparator
+    </div>
+    <div
+      className="table"
+    >
+      <table>
+        <thead>
+          <tr>
+            <th>
+              #
+            </th>
+            <th>
+              Market
+            </th>
+            <th>
+              Price
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              1
+            </td>
+            <td>
+              BTC
+            </td>
+            <td>
+              $30,000
+            </td>
+            <td>
+              1.45%
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;

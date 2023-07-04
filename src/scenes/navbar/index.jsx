@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <header className="header">
             <div>
-                <Link to="#">
+                <Link to="/">
                     <img src="logo.png" alt="Logo-CrypCompar" className="logo"/>
                 </Link>
             </div>

@@ -12,16 +12,16 @@ body {
 
 
 .wrapper {
-    padding-top: 3.5rem;
-    padding-bottom: 2rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 /*Style for the main logo*/
 .logo {
     width: 12.5rem;
     height: 2.5rem;
-    margin-left: 0.3rem;
+    margin-left: 1.3rem;
 }
 
 .header {
@@ -36,15 +36,70 @@ body {
 }
 
 .callToAction {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 700;
+    margin-bottom: 2rem;
 }
 
+/*Whole table*/
+.table>table {
+    width: 100%;
+}
+
+/*Each section from the row of the head*/
+th {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Each section of every row*/
+td {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Each row from the thead*/
+thead>tr {
+    height: 1.7rem;
+    font-size: 0.9rem;
+}
+
+/*Each row from the tbody*/
+tbody>tr {
+    height: 3rem;
+    font-size: 1.1rem;
+}
+
+.table>table {
+    border-collapse: collapse !important;
+}
+  
+.table tr {
+    border-bottom: 1px solid #cacaca7a;
+}
+  
+.table tr + tr {
+    border-top: 1px solid #cacaca7a;
+}
 
 /*Responsive Styles For PC*/
 @media (min-width: 1000px) {
     .logo {
         width: 15rem;
         height: 3rem;
+        margin-left: 5.1rem;
+    }
+    .wrapper {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
+    .callToAction {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
     }
 }
