@@ -9,9 +9,9 @@
 // Use CryptoCompare  $ Toplist by Marketcap Full Data
 // ----------------------------------------------------------------------------
 
-export const loadCryptoInfo = async function (data, cb) {
+export const loadCryptoInfo = async function (cb) {
     try {
-        let response = await fetch(`https://min-api.cryptocompare.com/data/top/mktcapfull?limit=50&tsym=USD&page=${data}&api_key={c4ebc752ad6c6f0a5ec7c8ad330b32e5a5f14a92c49458aae12522d773ddc7fc}`);
+        let response = await fetch(`https://min-api.cryptocompare.com/data/top/mktcapfull?limit=100&tsym=USD&api_key={c4ebc752ad6c6f0a5ec7c8ad330b32e5a5f14a92c49458aae12522d773ddc7fc}`);
         if (response.ok) {
             let dataOut = await response.json();  
             cb(dataOut , null);
