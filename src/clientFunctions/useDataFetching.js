@@ -6,7 +6,6 @@ export const useDataFetching = (typeOfFunc, cryptoIn) => {
   
 
   useEffect(() => {
-    console.log("effect")
     const fetchData = async () => {
       try {
         if (typeOfFunc === "general") {
@@ -15,6 +14,7 @@ export const useDataFetching = (typeOfFunc, cryptoIn) => {
               console.error(err);
               return;
             }
+            console.log("Esta llamando a la 1 funcion dentro de useEffect",data)
             setData(data);
           });
         } else {

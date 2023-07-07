@@ -84,6 +84,24 @@ tbody>tr {
     border-top: 1px solid #cacaca7a;
 }
 
+.container-button-crypto {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.logo-crypto {
+    margin-right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.abrev {
+    margin-left: 0.6rem;
+    color: #797979;
+}
+
 /*Responsive Styles For PC*/
 @media (min-width: 1000px) {
     .logo {

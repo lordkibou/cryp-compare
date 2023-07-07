@@ -9,7 +9,7 @@ const HomePage =  () => {
             <Navbar />
             <div className='wrapper'>
                 <div className='callToAction'>
-                    Compare the prices of the Top 100 cryptocurrencies
+                    Compare the prices of the Top 80 cryptocurrencies by Market Cap
                 </div>
                 <Table headers={["#","Name","Price","24h %"]} data={data} typeOfTable={"general"}/>
             </div>
