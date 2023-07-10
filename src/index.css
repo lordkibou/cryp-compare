@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /*Apply font*/
 html, body, #root, .App {
@@ -14,8 +14,8 @@ body {
 .wrapper {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
 }
 /*Style for the main logo*/
 .logo {
@@ -29,7 +29,6 @@ body {
     align-items: center;
     height: 4.7rem;
     width: 100%;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
     border-left: none;
     border-right: none;
     border-top: none;
@@ -38,7 +37,13 @@ body {
 .callToAction {
     font-size: 1.3rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-markets {
+    font-size: 0.8rem;
+    display: flex;
+    margin-bottom: 0;
 }
 
 /*Whole table*/
@@ -63,13 +68,28 @@ td {
 /*Each row from the thead*/
 thead>tr {
     height: 1.7rem;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+}
+
+tbody td {
+    max-width: 7rem;
+    margin-left: 0.4rem;
+    font-weight: 500;
+}
+
+thead th {
+    max-width: 7rem;
+    margin-left: 0.4rem;
 }
 
 /*Each row from the tbody*/
 tbody>tr {
     height: 3rem;
-    font-size: 1.1rem;
+    font-size: 0.7rem;
+}
+
+tbody>tr:hover {
+    background-color: #aebaf41f;
 }
 
 .table>table {
@@ -88,19 +108,142 @@ tbody>tr {
     display: flex;
     align-items: center;
     justify-content: left;
-
+    cursor: pointer;
+    padding-left: 1rem;
 }
 
 .logo-crypto {
-    margin-right: 0.5rem;
-    width: 1.5rem;
-    height: 1.5rem;
+    margin-right: 0.2rem;
+    width: 1rem;
+    height: 1rem;
 }
 
 .abrev {
     margin-left: 0.6rem;
     color: #797979;
 }
+
+.container-crypto-logo-name {
+    display: flex;
+    align-items: center;
+    margin-right: 0.4rem;
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ranking-crypto {
+    font-size: 0.75rem;
+    font-weight: 600;
+    background-color: rgb(152, 152, 152);
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 64px;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.rojo {
+    color: red;
+}
+
+.verde {
+    color: #16c784;
+}
+
+.rank-number {
+    color: #797979;
+    font-size: 0.7rem;
+}
+
+.button-go-back {
+    height: 2rem;
+    width: 5rem;
+    border: none;
+    color: white;
+    background-color: #2E4EF1;
+    margin-top: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-go-back:hover{
+    background-color: #1035ef;
+}
+
+.data-provided {
+    color: #58667e;
+    margin-bottom: 3rem;
+}
+
+.footer {
+    background-color: #2E4EF1;
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 50px; /* Ajusta la altura del footer según tus preferencias */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  
+  .sticky-footer {
+    position: fixed;
+    bottom: 0;
+  }
+  .footer-content {
+    margin-top: 0.4rem;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+  }
+
+  .scroll-button {
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: #2E4EF1;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .scroll-button.visible {
+    opacity: 1;
+  }
+  
+  .scroll-button:hover {
+    background-color: #1035ef;
+  }
+  
+  .arrow {
+    color: white;
+    font-size: 30px;
+  }
+
+  .link-text {
+    text-decoration: underline;
+    color: inherit;
+  }
 
 /*Responsive Styles For PC*/
 @media (min-width: 1000px) {
@@ -118,6 +261,44 @@ tbody>tr {
     .callToAction {
         font-size: 1.6rem;
         font-weight: 700;
-        margin-bottom: 2rem;
+        margin-bottom: 0.5rem;
     }
+    .cta-markets {
+        margin-bottom: 0;
+    }
+    .container-button-crypto {
+        padding-left: 6rem;
+    }
+    tbody>tr {
+        height: 3rem;
+        font-size: 1rem;
+    }
+    thead>tr {
+        height: 1.5rem;
+        font-size: 0.8rem;
+    }
+    .rank-number {
+        color: #797979;
+        font-size: 1rem;
+    }
+
+    .logo-crypto {
+        margin-right: 0.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .footer {
+        height: 80px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:430px) {
+    tbody>tr {
+        font-size: 0.55rem;
+    }
+    /*Each row from the thead*/
+thead>tr {
+    font-size: 0.45rem;
+}
 }

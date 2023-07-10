@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Footer Scene 1`] = `
+<footer
+  className="footer undefined"
+>
+  <div>
+    © 2023 Cryp Compare. All Rights Reserved.
+  </div>
+  <div
+    className="footer-content"
+  >
+    <a
+      className="link-text"
+      href="https://github.com/lordkibou"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Made with 
+      <span
+        aria-label="heart"
+        role="img"
+      >
+        ❤
+      </span>
+       by Juan Diaz
+    </a>
+  </div>
+</footer>
+`;
