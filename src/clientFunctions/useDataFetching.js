@@ -32,7 +32,7 @@ export const useDataFetching = (typeOfFunc, cryptoIn) => {
       }
     };
 
-    fetchData(); //MAYBE AWAIT THIS
+    fetchData();
 
     const intervalId = setInterval(fetchData, 30000);
 
