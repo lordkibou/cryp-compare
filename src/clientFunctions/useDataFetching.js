@@ -14,12 +14,10 @@ export const useDataFetching = (typeOfFunc, cryptoIn) => {
               console.error(err);
               return;
             }
-            console.log("Esta llamando a la 1 funcion dentro de useEffect",data)
             setData(data);
           });
         } else {
           await loadCryptoMarketsPrices(cryptoIn, (data, err) => {
-            console.log("funcion")
             if (err) {
               console.error(err);
               return;
