@@ -1,7 +1,7 @@
 ## CrypCompare
-Compare the prices of your favorite cryptocurrencies
+Compare the prices for your favorite cryptocurrencies
 
-Built with love by Juan Diaz using React.js, Node.js and Jest
+Built with love by Juan Diaz using React.js, Node.js, Jest and CCData API
 
 
 
